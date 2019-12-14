@@ -1,12 +1,12 @@
 ---
 framaid: nutrium-pad
-jsrelease: 1.5
+jsrelease: 1.8
 cssrel: 1.4
 ---
 <!DOCTYPE html><html><head>
 <meta http-equiv="Access-Control-Allow-Origin" content="{{ site.url }}"/>
 <meta charset="utf8">
-<script> var framaid = '{{framaid}}' </script>
+<script> var framaid = '{{page.framaid}}' </script>
 <!--
  vim: nospell
 <link href="https://cdn.statically.io/gh/iglake/cssjs/master/css/style.css" rel="stylesheet" type="text/css">
@@ -37,7 +37,7 @@ this web page.
 </div>
 
 <br>source: <a href="#" class=include>file</a>.
- made w/ <a href="{{ framaid }}" target=_blank class=frama>♡</a>.
+ made w/ <a href="{{ page.framaid }}" target=_blank class=frama>♡</a>.
 
 <!-- ------------------------------------------------------------ -->
 {% if jekyll.environment != 'production' %}
